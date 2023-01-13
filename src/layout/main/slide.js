@@ -15,7 +15,7 @@ const Slide = (props) => {
     const [btnarray, setBtnarray] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get('https://twoguys.pl//main.php', { headers: { 'Content-Type': 'application/json' } })
+        axios.get('http://twoguys.pl/main.php', { headers: { 'Content-Type': 'application/json' } })
             .then(res => {
                 setCarList(res.data);
             })
@@ -23,7 +23,7 @@ const Slide = (props) => {
                 console.log(e);
                 // alert('There was an error while retrieving the data')
             })
-        axios.get('https://twoguys.pl//buttonlist.php', { headers: { 'Content-Type': 'application/json' } })
+        axios.get('http://twoguys.pl/buttonlist.php', { headers: { 'Content-Type': 'application/json' } })
             .then(res1 => {
                 setBtnarray(res1.data);
             })

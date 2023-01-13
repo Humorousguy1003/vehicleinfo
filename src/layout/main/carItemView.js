@@ -9,7 +9,7 @@ function CarItemView(props) {
     useEffect(() => {
         let linkUrl = props.linkUrl;
 
-        let searchurl = 'https://twoguys.pl//detailView.php?page=' + linkUrl;
+        let searchurl = 'http://twoguys.pl/detailView.php?page=' + linkUrl;
         axios.get(searchurl)
             .then(res => {
                 setCarData(res.data[0]);
