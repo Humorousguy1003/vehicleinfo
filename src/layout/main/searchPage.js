@@ -14,13 +14,13 @@ function SearchPage(props) {
     useEffect(() => {
         let searchurl = '';
         if (searchString !== '') {
-            searchurl = 'http://localhost/scrapping/vinsearch.php?searchstring=' + searchString;
+            searchurl = 'http://twoguys.pl/vinsearch.php?searchstring=' + searchString;
         } else {
             if (searchlinkfref !== '') {
-                searchurl = 'http://localhost/scrapping/pagenation.php?page=' + pageNum + '&make=' + searchlinkfref;
+                searchurl = 'http://twoguys.pl/pagenation.php?page=' + pageNum + '&make=' + searchlinkfref;
             }
             else {
-                searchurl = 'http://localhost/scrapping/qqq.php?page=' + pageNum;
+                searchurl = 'http://twoguys.pl/qqq.php?page=' + pageNum;
             }
         }
 
