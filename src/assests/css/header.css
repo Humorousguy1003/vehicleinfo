@@ -10,7 +10,6 @@
     height: 8rem;
 }
 .header-left-part{
-    width: 30%;
     float: left;
     display: flex;
     vertical-align: middle;

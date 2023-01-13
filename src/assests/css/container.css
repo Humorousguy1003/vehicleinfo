@@ -1,8 +1,15 @@
-.container{
+
+body .container {
     /* max-width: 1120px !important; */
-    max-width: 1128px !important;
-    width: 1128px !important;
+    max-width: none;
+    width: 100%;
     /* background-color: antiquewhite; */
     /* border: solid; */
     justify-self: center;
+}
+
+@media (min-width: 1200px) {
+    body .container {
+        max-width: 1128px;
+    }
 }
