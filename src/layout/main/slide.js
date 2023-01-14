@@ -15,7 +15,7 @@ const Slide = (props) => {
     const [btnarray, setBtnarray] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get('https://twoguys.pl/main.php', { headers: { 'Content-Type': 'application/json' } })
+        axios.get('https://twoguys.pl/', { headers: { 'Content-Type': 'application/json' } })
             .then(res => {
                 setCarList(res.data);
             })
