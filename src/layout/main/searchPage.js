@@ -21,13 +21,13 @@ function SearchPage(props) {
     useEffect(() => {
         let searchurl = '';
         if (searchString !== '') {
-            searchurl = 'https://twoguys.pl/vinsearch.php?searchstring=' + searchString;
+            searchurl = 'https://h1114199.domeny.host/vinsearch.php?searchstring=' + searchString;
         } else {
             if (searchlinkfref !== '') {
-                searchurl = 'https://twoguys.pl/pagenation.php?page=' + pageNum + '&make=' + searchlinkfref;
+                searchurl = 'https://h1114199.domeny.host/pagenation.php?page=' + pageNum + '&make=' + searchlinkfref;
             }
             else {
-                searchurl = 'https://twoguys.pl/qqq.php?page=' + pageNum;
+                searchurl = 'https://h1114199.domeny.host/qqq.php?page=' + pageNum;
             }
         }
 
